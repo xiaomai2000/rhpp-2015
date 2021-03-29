@@ -29,7 +29,9 @@ fibonacci_seq <- function(n) {
 microbenchmark(fibonacci_seq(25), unit = "ms")
 
 # Benchmark using different values of n
-ns <- round(seq(0L, 50L, 2L))
+#ns <- round(seq(0L, 50L, 2L))
+ns <- round(seq(0L, 30L, 2L))
+
 timings <-
     matrix(nrow = length(ns), ncol = 2L,
            dimnames = list(ns, c("Recursive", "Sequential")))
