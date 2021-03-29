@@ -30,7 +30,7 @@ microbenchmark(fibonacci_seq(25), unit = "ms")
 
 # Benchmark using different values of n
 #ns <- round(seq(0L, 50L, 2L))
-ns <- round(seq(0L, 30L, 2L))
+ns <- round(seq(0L, 30L, 2L))  # 50L is usually too big for a laptop
 
 timings <-
     matrix(nrow = length(ns), ncol = 2L,
